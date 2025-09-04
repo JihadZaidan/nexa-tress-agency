@@ -12,33 +12,39 @@ import { useRef } from "react";
 export default function Featurest() {
 
     const fredoRef = useRef<HTMLHeadingElement>(null);
-    const sedoRef = useRef<HTMLHeadingElement>(null);
+    const sedoRef  = useRef<HTMLHeadingElement>(null);
     const tredeRef = useRef<HTMLHeadingElement>(null);
     const fordoRef = useRef<HTMLHeadingElement>(null);
-    const mageRef = useRef<HTMLDivElement>(null);
+    const mageRef  = useRef<HTMLDivElement>(null);
+    const headeRef = useRef<HTMLHeadingElement>(null);
+    const graphRef = useRef<HTMLParagraphElement>(null);
+    const buttonRef = useRef<HTMLDivElement>(null);
 
     useSlideFromLeft(fredoRef, 0.3);
     useSlideFromRight(sedoRef, 0.3);
     useSlideFromLeft(tredeRef, 0.3);
     useSlideFromRight(fordoRef, 0.3);
     useFadeIn(mageRef, 0.3);
+    useSlideFromLeft(headeRef, 0.3);
+    useSlideFromRight(graphRef, 0.3);
+    useSlideFromRight(buttonRef, 0.3);
 
     return (
         <div className="max-w-full w-full bg-neutral-900 lg:px-20 lg:pt-20 lg:pb-40 px-8 py-14">
             <div className="w-full flex flex-col">
                 <div className="w-full flex flex-col gap-10">
-                    <h2 className="font-sans font-medium text-left lext-white lg:text-4xl text-3xl leading-[150%]">
+                    <h2 ref={headeRef} className="font-sans font-medium text-left lext-white lg:text-4xl text-3xl leading-[150%]">
                         Transforming Digital <br />
                         Innovations for Visionary Brands
                     </h2>
 
                     <div className="w-full flex flex-col lg:pl-130 lg:gap-10 gap-5">
-                        <p className="text-white font-normal font-sans lg:text-xl text-base leading-[170%]">
+                        <p ref={graphRef} className="text-white font-normal font-sans lg:text-xl text-base leading-[170%]">
                             We are passionate about uncovering the best digital innovations for forward —
                             thinking brands looking to push boundaries and drive significant impact.
                         </p>
 
-                        <div className="lg:ml-140">
+                        <div ref={buttonRef} className="lg:ml-140">
                             <Button className="justify-center gap-[9px] ml-[-10px] border-b-2 border-black">
                                 <p className="text-white text-lg font-medium">Explore All Experise</p>
                                 <ArrowRight height={22} width={22} className="mt-[2px] text-white" />
