@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import Kopi from "../../../public/expertise/coffes.png";
 import Tamar from "../../../public/expertise/brands.png";
 import Cody from "../../../public/expertise/coder.png";
@@ -61,3 +60,4 @@ export default function Uppertise() {
         </div>
     );
 }
+
