@@ -40,7 +40,7 @@ export default function DescribeDetail() {
                         effective adaptation strategies businesses can navigate the complexities of brand <br />
                         evolution with confidence. Through insightful case studies actionable strategies <br />
                         and a focus on authenticity this post aims to equip brands with the knowledge and <br />
-                        tools they need to thrive in today's ever-changing marketplace.
+                        tools they need to thrive in todayapos;s ever-changing marketplace.
                     </p>
                 </div>
 
@@ -52,4 +52,5 @@ export default function DescribeDetail() {
             </div>
         </div>
     )
+
 }
