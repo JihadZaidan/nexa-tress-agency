@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import team from "../../../public/landingpage/teams.png"
+import cheepa from "../../../public/landingpage/body/chipschapa.png"
 import { Button } from "../ui/button"
 import { ArrowRight } from "lucide-react"
 import { useSlideFromTop, useSlideFromLeft, useSlideFromRight } from "@/library/animations"
@@ -48,6 +49,14 @@ export default function Resprime() {
                         </Button>
                     </div>
                 </div>
+
+
+                <Image
+                    src={cheepa}
+                    alt="upper section"
+                    className="lg:w-[35%] lg:absolute lg:opacity-[100%] opacity-0 lg:top-[570px] lg:left-[900px]"
+                />
+
             </div>
         </div>
     )
